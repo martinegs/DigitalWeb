@@ -91,6 +91,8 @@
 
       <!-- Social Media Section -->
       <div class="social-section text-center my-5 py-5">
+        <!-- Línea separadora arriba de redes sociales -->
+        <div class="social-separator"></div>
         <h3 class="social-title mb-4">Seguinos en Redes Sociales</h3>
         <div class="d-flex gap-4 justify-content-center align-items-center flex-wrap">
           <a 
@@ -376,6 +378,23 @@ const currentYear = new Date().getFullYear()
 /* Social Section */
 .social-section {
   position: relative;
+}
+
+.social-separator {
+  width: 60%;
+  max-width: 800px;
+  height: 1px;
+  margin: 0 auto 2rem auto;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(6, 182, 212, 0.6) 25%, 
+    rgba(37, 99, 235, 0.8) 50%, 
+    rgba(6, 182, 212, 0.6) 75%, 
+    transparent 100%
+  );
+  box-shadow: 
+    0 0 8px rgba(6, 182, 212, 0.4),
+    0 0 16px rgba(6, 182, 212, 0.2);
 }
 
 .social-title {
