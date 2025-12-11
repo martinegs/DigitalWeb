@@ -133,6 +133,28 @@ h1, h2, h3, h4, h5, h6 {
     0 0 16px rgba(6, 182, 212, 0.2);
 }
 
+/* Línea separadora antes del footer */
+.app footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 800px;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(6, 182, 212, 0.6) 25%, 
+    rgba(37, 99, 235, 0.8) 50%, 
+    rgba(6, 182, 212, 0.6) 75%, 
+    transparent 100%
+  );
+  box-shadow: 
+    0 0 8px rgba(6, 182, 212, 0.4),
+    0 0 16px rgba(6, 182, 212, 0.2);
+}
+
 .app .mb-5 {
   margin-bottom: 2rem !important;
 }
