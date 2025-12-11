@@ -64,26 +64,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .app {
   scroll-behavior: smooth;
-  background: var(--bg-dark);
+  background: #0f172a;
   min-height: 100vh;
   padding-top: 70px;
   position: relative;
 }
 
-/* Reduced spacing between sections */
-.app section {
-  margin-bottom: 0;
-}
-
-.app .mb-5 {
-  margin-bottom: 2rem !important;
-}
-
-.app .mb-4 {
-  margin-bottom: 1.25rem !important;
-}
-
-/* Animated background mesh */
+/* Professional background pattern */
 .app::before {
   content: '';
   position: fixed;
@@ -92,11 +79,66 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(6, 182, 212, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06), transparent),
-    radial-gradient(ellipse 50% 30% at 50% 80%, rgba(236, 72, 153, 0.04), transparent);
+    radial-gradient(ellipse 100% 80% at 10% 0%, rgba(6, 182, 212, 0.07), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 90% 20%, rgba(37, 99, 235, 0.05), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(139, 92, 246, 0.04), transparent 50%);
   pointer-events: none;
   z-index: 0;
+}
+
+/* Subtle grid pattern overlay */
+.app::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* Reduced spacing between sections */
+.app section {
+  margin-bottom: 0;
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Línea separadora entre secciones - solo entre secciones, no al final */
+.app section:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 800px;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(6, 182, 212, 0.6) 25%, 
+    rgba(37, 99, 235, 0.8) 50%, 
+    rgba(6, 182, 212, 0.6) 75%, 
+    transparent 100%
+  );
+  box-shadow: 
+    0 0 8px rgba(6, 182, 212, 0.4),
+    0 0 16px rgba(6, 182, 212, 0.2);
+}
+
+.app .mb-5 {
+  margin-bottom: 2rem !important;
+}
+
+.app .mb-4 {
+  margin-bottom: 1.25rem !important;
 }
 
 /* Custom scrollbar */

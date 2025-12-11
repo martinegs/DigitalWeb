@@ -145,7 +145,7 @@
 
 <style scoped>
 .premium-section {
-  background: #0f172a;
+  background: transparent;
   position: relative;
   overflow: hidden;
 }

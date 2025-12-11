@@ -307,7 +307,7 @@
 <style scoped>
 .premium-section {
   position: relative;
-  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: transparent;
   padding: 3.5rem 0;
   overflow: hidden;
 }

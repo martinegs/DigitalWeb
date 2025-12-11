@@ -161,12 +161,16 @@ const currentYear = new Date().getFullYear()
 
 <style scoped>
 .premium-footer {
-  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
 
 .footer-top-border {
+  display: none;
+}
+
+.old-footer-top-border {
   position: absolute;
   top: 0;
   left: 0;
@@ -371,8 +375,7 @@ const currentYear = new Date().getFullYear()
 
 /* Social Section */
 .social-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .social-title {
@@ -436,7 +439,7 @@ const currentYear = new Date().getFullYear()
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .copyright-text {

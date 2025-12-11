@@ -100,7 +100,7 @@ const scrollToSection = (id) => {
 
 <style scoped>
 .hero-section {
-  background: linear-gradient(180deg, #030712 0%, #0f172a 100%);
+  background: transparent;
   padding: 120px 0 80px;
 }
 
