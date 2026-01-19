@@ -1,34 +1,10 @@
-<script setup>
-import Navbar from './components/Navbar.vue'
-import HeroSection from './components/HeroSection.vue'
-import ServicesSection from './components/ServicesSection.vue'
-import DisenoSection from './components/DisenoSection.vue'
-import SistemaSection from './components/SistemaSection.vue'
-import TelasSection from './components/TelasSection.vue'
-import PapelSection from './components/PapelSection.vue'
-import DTFSection from './components/DTFSection.vue'
-import DTFMayorSection from './components/DTFMayorSection.vue'
-import RemerasSection from './components/RemerasSection.vue'
-import ProductsSection from './components/ProductsSection.vue'
-import ContactFooter from './components/ContactFooter.vue'
-</script>
-
 <template>
-  <div class="app">
-    <Navbar />
-    <HeroSection />
-    <!-- Orden según menú: Sublimacion, Diseño, Sistema, Telas, Papel, DTF, DTF Mayor, Remeras -->
-    <ServicesSection />
-    <DisenoSection />
-    <SistemaSection />
-    <TelasSection />
-    <PapelSection />
-    <DTFSection />
-    <DTFMayorSection />
-    <RemerasSection />
-    <ContactFooter />
-  </div>
+  <router-view />
 </template>
+
+<script setup>
+console.log('App.vue cargado')
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -53,13 +29,17 @@ import ContactFooter from './components/ContactFooter.vue'
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg-dark);
+  background: #0f172a;
   color: var(--text-primary);
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Grotesk', sans-serif;
+}
+
+#app {
+  min-height: 100vh;
 }
 
 .app {
@@ -131,36 +111,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 
     0 0 8px rgba(6, 182, 212, 0.4),
     0 0 16px rgba(6, 182, 212, 0.2);
-}
-
-/* Línea separadora antes del footer */
-.app footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  max-width: 800px;
-  height: 1px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(6, 182, 212, 0.6) 25%, 
-    rgba(37, 99, 235, 0.8) 50%, 
-    rgba(6, 182, 212, 0.6) 75%, 
-    transparent 100%
-  );
-  box-shadow: 
-    0 0 8px rgba(6, 182, 212, 0.4),
-    0 0 16px rgba(6, 182, 212, 0.2);
-}
-
-.app .mb-5 {
-  margin-bottom: 2rem !important;
-}
-
-.app .mb-4 {
-  margin-bottom: 1.25rem !important;
 }
 
 /* Custom scrollbar */

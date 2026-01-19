@@ -115,7 +115,7 @@
         <p class="cta-description">
           Accedé directo al producto más vendido por talleres y marcas: impresión DTF a medida, con entrega ágil y soporte técnico incluido.
         </p>
-        <a href="https://dtf.stamp" target="_blank" class="product-btn">
+        <a href="https://dtf.ar" target="_blank" class="product-btn">
           <span>Ver producto DTF</span>
           <span class="star-icon">⭐</span>
         </a>

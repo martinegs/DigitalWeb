@@ -68,14 +68,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Scroll indicator -->
-          <div class="scroll-indicator">
-            <div class="mouse">
-              <div class="wheel"></div>
-            </div>
-            <span>Explorá más</span>
-          </div>
         </div>
       </div>
     </div>

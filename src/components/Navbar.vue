@@ -40,7 +40,8 @@ const navLinks = [
   { id: 'papel', label: 'Papel' },
   { id: 'dtf', label: 'DTF' },
   { id: 'dtf-mayor', label: 'Mayorista' },
-  { id: 'remeras', label: 'Remeras' }
+  { id: 'remeras', label: 'Remeras' },
+  { id: 'productos', label: 'Productos' }
 ]
 
 const scrollToSection = (id) => {

@@ -126,7 +126,7 @@
         <p class="cta-description">
           Empezá a producir con nosotros desde cualquier lugar del país. DTF de alta calidad desde Mendoza y Buenos Aires para toda Argentina.
         </p>
-        <a href="https://dtf.stamp" target="_blank" class="cta-button">
+        <a href="https://dtf.ar" target="_blank" class="cta-button">
           <span>Ir al Producto DTF</span>
           <span class="cta-icon">💥</span>
         </a>
