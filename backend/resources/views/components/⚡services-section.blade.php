@@ -1,0 +1,277 @@
+<?php
+
+use Livewire\Component;
+
+new class extends Component
+{
+    //
+};
+?>
+
+<div>
+  <section id="sublimacion" class="premium-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">
+          <span>🔥</span> Servicio Principal
+        </div>
+        <h2 class="section-title">
+          Sublimación por <span class="highlight">Calandra</span>
+        </h2>
+        <p class="section-description">
+          El método más conveniente, rápido y seguro para sublimar tus telas. Una sola calandra produce más de 1000 metros lineales diarios con acabado profesional.
+        </p>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="row g-4 mb-5">
+        <div class="col-12 col-md-4">
+          <div class="premium-card text-center h-100">
+            <div class="card-icon mx-auto">📏</div>
+            <h3 class="card-title">Ancho de Impresión</h3>
+            <p class="card-description">Hasta 1,55 metros de ancho continuo. El largo depende del rollo de tela que traigas.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="premium-card text-center h-100">
+            <div class="card-icon mx-auto">📐</div>
+            <h3 class="card-title">Cantidad Mínima</h3>
+            <p class="card-description">Desde 5 metros lineales para mantener la tensión perfecta durante el proceso.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="premium-card text-center h-100">
+            <div class="card-icon mx-auto">🧵</div>
+            <h3 class="card-title">Telas Compatibles</h3>
+            <p class="card-description">Blancas o claras con +70% poliéster: lanilla, lycra, microfibra, friza, voile y más.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="mb-5">
+        <div class="text-center mb-4">
+          <h3 class="h3 fw-bold text-white mb-2">Mirá el Proceso en Acción</h3>
+          <p class="text-white-50">Conocé cómo se realiza el calandreado textil profesional</p>
+        </div>
+        <div class="video-wrapper mx-auto" style="max-width: 900px;">
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.youtube.com/embed/QQjuz9kEo70" 
+              title="Sublimación por Calandra" 
+              allowfullscreen
+              style="border-radius: 20px; border: 1px solid rgba(6, 182, 212, 0.2);"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Calandra -->
+      <div class="cta-box mb-5">
+        <h3 class="cta-title">¿Por qué sublimar con calandra?</h3>
+        <p class="cta-description">
+          A diferencia del planchado tradicional, el calandreado no compacta las fibras. Esto significa colores más intensos, mayor durabilidad y un acabado suave y profesional.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+          <div class="text-center">
+            <div class="stat-value">+1000</div>
+            <div class="stat-label">Metros/día</div>
+          </div>
+          <div class="text-center">
+            <div class="stat-value">1.55m</div>
+            <div class="stat-label">Ancho máx.</div>
+          </div>
+          <div class="text-center">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Calidad</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="text-center">
+        <h3 class="h3 fw-bold text-white mb-3">¿Querés un presupuesto?</h3>
+        <p class="text-white-50 mb-4">Personalizamos estampados a partir de 5 metros lineales.</p>
+        <a href="#contacto" class="premium-btn">
+          📩 Solicitar Presupuesto
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+@push('styles')
+<style>
+.premium-section {
+  position: relative;
+  padding: 60px 0;
+  background: transparent;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.2));
+  border-radius: 28px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 50px;
+  color: #22d3ee;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 20px;
+}
+
+.section-title .highlight {
+  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.premium-card {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  background: rgba(6, 182, 212, 0.05);
+  border-color: rgba(6, 182, 212, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta-box {
+  padding: 40px;
+  background: rgba(6, 182, 212, 0.05);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 15px;
+}
+
+.cta-description {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.premium-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4);
+}
+
+.premium-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(6, 182, 212, 0.6);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+}
+</style>
+@endpush
