@@ -11,7 +11,7 @@ new class extends Component
 <nav class="custom-navbar fixed-top">
     <div class="nav-container">
         <a class="nav-logo" href="#inicio" onclick="scrollToSection('inicio'); return false;">
-            <img src="{{ asset('storage/img/logo.png') }}" alt="DigitalTex" />
+            <img src="{{ asset('storage/img/logo.png') }}" alt="DigitalTex" style="max-height: 50px; width: auto; object-fit: contain;" loading="eager" />
             <span class="logo-glow"></span>
         </a>
         
