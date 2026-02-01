@@ -116,56 +116,59 @@ new class extends Component
               </p>
               <span class="card-label">Panel General</span>
               <div class="panel-preview mt-3">
-                <img src="{{ asset('storage/img/Registro/Login.png') }}" alt="Panel General" class="panel-image" onclick="window.openImageModal(this)">
+                <img src="{{ asset('storage/img/Registro/Login.png') }}" alt="Panel General" class="panel-image" onclick="window.openImageModal(this)" loading="lazy">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- WhatsApp Contact -->
-      <div class="text-center mb-4">
-        <h3 class="gallery-title mb-3">¿Tenés dudas? Escribinos</h3>
-        <p class="section-description mb-4">Elegí tu sucursal y hablá directo con nosotros por WhatsApp.</p>
-      </div>
-
-      <div class="text-center whatsapp-buttons">
-          <a href="#contacto" class="cta-link">Contactanos</a>
-      </div>
-
       <!-- Mapas de Sucursales -->
       <div class="row g-4 mt-5">
         <div class="col-12 col-md-6">
-          <div class="map-card">
-            <h4 class="map-title">Sucursal Mendoza</h4>
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.8!2d-68.83019076857535!3d-32.87425745857911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUyJzI3LjMiUyA2OMKwNDknNDguNyJX!5e0!3m2!1ses!2sar!4v1234567890"
-                width="100%"
-                height="300"
-                style="border:0; border-radius: 12px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+            <div class="map-card">
+              <h4 class="map-title">Sucursal Mendoza</h4>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.8!2d-68.83019076857535!3d-32.87425745857911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUyJzI3LjMiUyA2OMKwNDknNDguNyJX!5e0!3m2!1ses!2sar!4v1234567890"
+                  width="100%"
+                  height="300"
+                  style="border:0; border-radius: 12px;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+                <a href="https://wa.me/5492616945791?text=Hola%20Digitaltex%20Mendoza%2C%20quiero%20consultar" target="_blank" class="map-card-link">
+              <div class="map-contact-info">
+                <div class="map-phone">📞 261 694-5791</div>
+                <div class="map-cta">Click para contactar por WhatsApp</div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-12 col-md-6">
-          <div class="map-card">
-            <h4 class="map-title">Sucursal Buenos Aires</h4>
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0!2d-58.37835165955517!3d-34.62545067282422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM3JzMxLjYiUyA1OMKwMjInNDIuMSJX!5e0!3m2!1ses!2sar!4v1234567890"
-                width="100%"
-                height="300"
-                style="border:0; border-radius: 12px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+            <div class="map-card">
+              <h4 class="map-title">Sucursal Buenos Aires</h4>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0!2d-58.37835165955517!3d-34.62545067282422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM3JzMxLjYiUyA1OMKwMjInNDIuMSJX!5e0!3m2!1ses!2sar!4v1234567890"
+                  width="100%"
+                  height="300"
+                  style="border:0; border-radius: 12px;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+                        <a href="https://wa.me/5491141700467?text=Hola%20Digitaltex%20Buenos%20Aires%2C%20quiero%20consultar" target="_blank" class="map-card-link">
+
+              <div class="map-contact-info">
+                <div class="map-phone">📞 11 4170-0467</div>
+                <div class="map-cta">Click para contactar por WhatsApp</div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -517,18 +520,27 @@ new class extends Component
 }
 
 /* Map Cards */
+.map-card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
 .map-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 1.5rem;
   transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
 }
 
 .map-card:hover {
-  border-color: rgba(37, 99, 235, 0.3);
+  border-color: rgba(6, 182, 212, 0.5);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.05);
 }
 
 .map-title {
@@ -544,10 +556,43 @@ new class extends Component
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 .map-container iframe {
   display: block;
+}
+
+.map-contact-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.map-card:hover .map-contact-info {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+.map-phone {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 0.5rem;
+}
+
+.map-cta {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.map-card:hover .map-cta {
+  color: #22d3ee;
 }
 
 /* Panel Preview Image */

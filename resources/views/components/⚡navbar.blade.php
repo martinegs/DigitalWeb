@@ -11,7 +11,10 @@ new class extends Component
 <nav class="custom-navbar fixed-top">
     <div class="nav-container">
         <a class="nav-logo" href="#inicio" onclick="scrollToSection('inicio'); return false;">
-            <img src="{{ asset('storage/img/logo.png') }}" alt="DigitalTex" style="max-height: 50px; width: auto; object-fit: contain;" loading="eager" />
+            <picture>
+                <source srcset="{{ asset('storage/img/logo.webp') }}" type="image/webp">
+                <img src="{{ asset('storage/img/logo.png') }}" alt="DigitalTex" style="max-height: 50px; width: auto; object-fit: contain;" loading="eager" />
+            </picture>
             <span class="logo-glow"></span>
         </a>
         
@@ -37,9 +40,9 @@ new class extends Component
             @endforeach
         </div>
 
-        <button class="nav-cta" onclick="scrollToSection('contacto')">
+        <a href="https://wa.me/5492616945791?text=Hola%20Digitaltex%20Mendoza%2C%20quiero%20consultar" target="_blank" class="nav-cta" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
             Contactar
-        </button>
+        </a>
     </div>
 </nav>
 
@@ -59,6 +62,7 @@ nav.custom-navbar.fixed-top {
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 99999 !important;
   box-shadow: 0 4px 20px rgba(0, 128, 255, 0.3) !important;
 }
@@ -76,6 +80,7 @@ nav.custom-navbar.fixed-top:hover {
   align-items: center;
   justify-content: space-between;
   gap: 48px;
+  height: 70px;
 }
 
 .nav-logo {

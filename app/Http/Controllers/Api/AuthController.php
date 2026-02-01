@@ -22,7 +22,7 @@ class AuthController extends Controller
 
         $user = User::where('email', $request->email)->first();
 
-        if (!$user || !Hash::check($request->password, $user->password)) {
+        if (! $user || ! Hash::check($request->password, $user->password)) {
             throw ValidationException::withMessages([
                 'email' => ['Las credenciales son incorrectas.'],
             ]);
@@ -38,7 +38,7 @@ class AuthController extends Controller
                 'name' => $user->name,
                 'email' => $user->email,
             ],
-            'token' => $token
+            'token' => $token,
         ], 200);
     }
 
@@ -50,7 +50,7 @@ class AuthController extends Controller
         $request->user()->currentAccessToken()->delete();
 
         return response()->json([
-            'message' => 'Sesión cerrada correctamente'
+            'message' => 'Sesión cerrada correctamente',
         ], 200);
     }
 
@@ -60,7 +60,7 @@ class AuthController extends Controller
     public function me(Request $request)
     {
         return response()->json([
-            'user' => $request->user()
+            'user' => $request->user(),
         ]);
     }
 }

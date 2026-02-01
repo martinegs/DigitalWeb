@@ -42,7 +42,6 @@ new class extends Component
               </p>
               <a href="https://clientes.digitaltex.ar/" target="_blank" class="cta-button">
                 <span>Ver Precios y Telas Disponibles</span>
-                <span class="cta-arrow">→</span>
               </a>
             </div>
             <div class="price-card-glow"></div>
@@ -59,7 +58,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="fabric-card">
             <div class="fabric-image">
-              <img src="{{ asset('storage/img/telas/Friza-Deportiva.webp') }}" alt="Friza Deportiva" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/telas/Friza-Deportiva.webp') }}" alt="Friza Deportiva" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="fabric-content">
               <h3 class="fabric-title">Friza Deportiva Estampada</h3>
@@ -71,7 +70,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="fabric-card">
             <div class="fabric-image">
-              <img src="{{ asset('storage/img/telas/Soft-Shell.webp') }}" alt="Softshell" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/telas/Soft-Shell.webp') }}" alt="Softshell" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="fabric-content">
               <h3 class="fabric-title">Softshell</h3>
@@ -83,7 +82,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="fabric-card">
             <div class="fabric-image">
-              <img src="{{ asset('storage/img/telas/Set-polyester.webp') }}" alt="Jersey Set de Poliéster" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/telas/Set-polyester.webp') }}" alt="Jersey Set de Poliéster" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="fabric-content">
               <h3 class="fabric-title">Jersey Set de Poliéster</h3>
@@ -95,7 +94,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="fabric-card">
             <div class="fabric-image">
-              <img src="{{ asset('storage/img/telas/Jersey-Spun.webp') }}" alt="Jersey Spun" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/telas/Jersey-Spun.webp') }}" alt="Jersey Spun" onclick="window.openImageModal && window.openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="fabric-content">
               <h3 class="fabric-title">Jersey Spun</h3>
@@ -118,10 +117,6 @@ new class extends Component
               <p class="service-text">
                 Trabajamos con diseño personalizado, control de calidad, y entrega a todo el país.
               </p>
-              <a href="https://wa.me/5492616945791?text=Hola%20Digitaltex%2C%20quiero%20consultar%20sobre%20telas" target="_blank" class="cta-button cta-contact">
-                <span>📩</span>
-                <span>Contactanos Ahora</span>
-              </a>
             </div>
           </div>
         </div>
@@ -215,13 +210,6 @@ new class extends Component
               </ul>
             </div>
           </div>
-        </div>
-
-        <!-- CTA Final -->
-        <div class="final-cta text-center">
-          <h3 class="cta-title">¿Querés tu Jersey Spun personalizado?</h3>
-          <p class="cta-subtitle">Estampamos a partir de 5 metros con tu diseño, o elegí entre nuestros estampados disponibles.</p>
-          <a href="#contacto" class="cta-link cta-large">Pedí tu presupuesto</a>
         </div>
       </div>
     </div>

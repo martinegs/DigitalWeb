@@ -35,7 +35,7 @@ new class extends Component
               <div class="row align-items-center">
                 <div class="col-12 col-md-5 p-0">
                   <div class="main-card-image">
-                    <img src="{{ asset('storage/img/moldes/Camiseta de Futbol.webp') }}" alt="Molde Camiseta de Fútbol" onclick="openImageModal(this)" style="cursor: pointer;" />
+                    <img src="{{ asset('storage/img/moldes/Camiseta de Futbol.webp') }}" alt="Molde Camiseta de Fútbol" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-12 col-md-7 p-4 p-md-5">
@@ -75,7 +75,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="mold-card">
             <div class="mold-card-image">
-              <img src="{{ asset('storage/img/moldes/Top Deportivo.webp') }}" alt="Top Deportivo" onclick="openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/moldes/Top Deportivo.webp') }}" alt="Top Deportivo" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="mold-card-content">
               <h4 class="mold-title">Top Deportivo</h4>
@@ -87,7 +87,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="mold-card">
             <div class="mold-card-image">
-              <img src="{{ asset('storage/img/moldes/Campera Manga Ranglar.webp') }}" alt="Campera Manga Ranglan" onclick="openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/moldes/Campera Manga Ranglar.webp') }}" alt="Campera Manga Ranglan" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="mold-card-content">
               <h4 class="mold-title">Campera Manga Ranglan</h4>
@@ -99,7 +99,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="mold-card">
             <div class="mold-card-image">
-              <img src="{{ asset('storage/img/moldes/Remera Manga Corta.webp') }}" alt="Remera Manga Corta" onclick="openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/moldes/Remera Manga Corta.webp') }}" alt="Remera Manga Corta" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="mold-card-content">
               <h4 class="mold-title">Remera Mangas Cortas</h4>
@@ -111,7 +111,7 @@ new class extends Component
         <div class="col-12 col-md-6 col-lg-3">
           <div class="mold-card">
             <div class="mold-card-image">
-              <img src="{{ asset('storage/img/moldes/Calza Larga.webp') }}" alt="Calza Larga" onclick="openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/moldes/Calza Larga.webp') }}" alt="Calza Larga" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="mold-card-content">
               <h4 class="mold-title">Calzas Largas</h4>
@@ -132,7 +132,7 @@ new class extends Component
         <div class="col-12 col-lg-10">
           <div class="prep-card">
             <div class="prep-card-image mb-4">
-              <img src="{{ asset('storage/img/moldes/Preparacion de archivo para impresion.webp') }}" alt="Preparación de Archivos" onclick="openImageModal(this)" style="cursor: pointer;" />
+              <img src="{{ asset('storage/img/moldes/Preparacion de archivo para impresion.webp') }}" alt="Preparación de Archivos" onclick="openImageModal(this)" style="cursor: pointer;" loading="lazy" />
             </div>
             <div class="tips-card-inner p-4 p-md-5">
               <h4 class="card-title-dark mb-4">Tips para Sublimación y Corte</h4>
@@ -158,14 +158,6 @@ new class extends Component
                   <span>Armá tu archivo según el orden de planchado</span>
                 </li>
               </ul>
-
-              <div class="text-center mt-5">
-                <a href="#contacto" class="cta-button">
-                  <span class="cta-icon">💬</span>
-                  Consultar por WhatsApp
-                  <span class="cta-arrow">→</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>

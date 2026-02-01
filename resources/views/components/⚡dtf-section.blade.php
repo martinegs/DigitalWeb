@@ -157,15 +157,6 @@ new class extends Component
           </div>
         </div>
       </div>
-
-      <!-- CTA Final -->
-      <div class="final-cta text-center">
-        <h3 class="final-title">¿Querés vender más con tu marca?</h3>
-        <p class="final-description">
-          Dejanos ayudarte. El DTF es el futuro del estampado y nosotros somos tu aliado. Sumate al sistema de producción profesional con Digitaltex.
-        </p>
-        <a href="#contacto" class="cta-link">Consultanos</a>
-      </div>
     </div>
 </section>
 

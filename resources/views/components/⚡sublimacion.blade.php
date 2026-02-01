@@ -78,15 +78,6 @@
           </div>
         </div>
       </div>
-
-      <!-- CTA Section -->
-      <div class="text-center">
-        <h3 class="h3 fw-bold text-white mb-3">¿Querés un presupuesto?</h3>
-        <p class="text-white-50 mb-4">Personalizamos estampados a partir de 5 metros lineales.</p>
-        <a href="#contacto" class="premium-btn">
-          📩 Solicitar Presupuesto
-        </a>
-      </div>
     </div>
   </section>
 </template>

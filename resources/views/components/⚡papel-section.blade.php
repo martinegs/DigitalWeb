@@ -88,7 +88,6 @@ new class extends Component
               <p class="cta-text">
                 Asesorate con nosotros para elegir el mejor papel según tu tipo de producción textil.
               </p>
-              <a href="#contacto" class="cta-link">Consultanos</a>
             </div>
             <div class="cta-card-glow"></div>
           </div>

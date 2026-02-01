@@ -14,13 +14,13 @@ class Product extends Model
         'image',
         'stock',
         'has_stock',
-        'is_active'
+        'is_active',
     ];
 
     protected $casts = [
         'price' => 'decimal:2',
         'stock' => 'integer',
         'has_stock' => 'boolean',
-        'is_active' => 'boolean'
+        'is_active' => 'boolean',
     ];
 }

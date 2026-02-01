@@ -14,9 +14,9 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::orderBy('name')->get();
-        
+
         return response()->json([
-            'categories' => $categories
+            'categories' => $categories,
         ]);
     }
 
@@ -28,14 +28,14 @@ class CategoryController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255|unique:categories',
             'description' => 'nullable|string',
-            'is_active' => 'nullable|boolean'
+            'is_active' => 'nullable|boolean',
         ]);
 
         $category = Category::create($validated);
 
         return response()->json([
             'message' => 'Categoría creada exitosamente',
-            'category' => $category
+            'category' => $category,
         ], 201);
     }
 
@@ -45,9 +45,9 @@ class CategoryController extends Controller
     public function show(string $id)
     {
         $category = Category::with('products')->findOrFail($id);
-        
+
         return response()->json([
-            'category' => $category
+            'category' => $category,
         ]);
     }
 
@@ -59,16 +59,16 @@ class CategoryController extends Controller
         $category = Category::findOrFail($id);
 
         $validated = $request->validate([
-            'name' => 'sometimes|required|string|max:255|unique:categories,name,' . $id,
+            'name' => 'sometimes|required|string|max:255|unique:categories,name,'.$id,
             'description' => 'nullable|string',
-            'is_active' => 'nullable|boolean'
+            'is_active' => 'nullable|boolean',
         ]);
 
         $category->update($validated);
 
         return response()->json([
             'message' => 'Categoría actualizada exitosamente',
-            'category' => $category
+            'category' => $category,
         ]);
     }
 
@@ -78,18 +78,18 @@ class CategoryController extends Controller
     public function destroy(string $id)
     {
         $category = Category::findOrFail($id);
-        
+
         // Check if category has products
         if ($category->products()->count() > 0) {
             return response()->json([
-                'message' => 'No se puede eliminar la categoría porque tiene productos asociados'
+                'message' => 'No se puede eliminar la categoría porque tiene productos asociados',
             ], 422);
         }
-        
+
         $category->delete();
 
         return response()->json([
-            'message' => 'Categoría eliminada exitosamente'
+            'message' => 'Categoría eliminada exitosamente',
         ]);
     }
 }

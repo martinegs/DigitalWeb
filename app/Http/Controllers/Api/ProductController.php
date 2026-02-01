@@ -15,9 +15,9 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::orderBy('created_at', 'desc')->get();
-        
+
         return response()->json([
-            'products' => $products
+            'products' => $products,
         ], 200);
     }
 
@@ -34,7 +34,7 @@ class ProductController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'stock' => 'nullable|integer|min:0',
             'has_stock' => 'nullable|boolean',
-            'is_active' => 'nullable|boolean'
+            'is_active' => 'nullable|boolean',
         ]);
 
         // Subir imagen si existe
@@ -47,7 +47,7 @@ class ProductController extends Controller
 
         return response()->json([
             'message' => 'Producto creado exitosamente',
-            'product' => $product
+            'product' => $product,
         ], 201);
     }
 
@@ -57,9 +57,9 @@ class ProductController extends Controller
     public function show(string $id)
     {
         $product = Product::findOrFail($id);
-        
+
         return response()->json([
-            'product' => $product
+            'product' => $product,
         ], 200);
     }
 
@@ -78,7 +78,7 @@ class ProductController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'stock' => 'nullable|integer|min:0',
             'has_stock' => 'nullable|boolean',
-            'is_active' => 'nullable|boolean'
+            'is_active' => 'nullable|boolean',
         ]);
 
         // Subir nueva imagen si existe
@@ -95,7 +95,7 @@ class ProductController extends Controller
 
         return response()->json([
             'message' => 'Producto actualizado exitosamente',
-            'product' => $product
+            'product' => $product,
         ], 200);
     }
 
@@ -114,7 +114,7 @@ class ProductController extends Controller
         $product->delete();
 
         return response()->json([
-            'message' => 'Producto eliminado exitosamente'
+            'message' => 'Producto eliminado exitosamente',
         ], 200);
     }
 }
