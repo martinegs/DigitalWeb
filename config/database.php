@@ -43,6 +43,16 @@ return [
             'transaction_mode' => 'DEFERRED',
         ],
 
+        // 'none' connection: when DB is intentionally disabled in env (DB_CONNECTION=none)
+        // Uses an in-memory sqlite driver to avoid any database operations or persistence.
+        'none' => [
+            'driver' => 'sqlite',
+            'url' => null,
+            'database' => ':memory:',
+            'prefix' => '',
+            'foreign_key_constraints' => false,
+        ],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),

@@ -1,0 +1,21 @@
+# Proteger archivos y carpetas sensibles del proyecto Laravel
+# Este archivo debe estar en la RAÍZ del proyecto (NO en public/)
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirigir todo el tráfico a la carpeta public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Denegar acceso a archivos sensibles
+<FilesMatch "^\.env|^\.git|composer\.(json|lock)|package(-lock)?\.json|artisan">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Proteger directorios sensibles
+RedirectMatch 403 ^/(storage|app|bootstrap|config|database|resources|routes|tests|vendor)/.*$
+
+# Deshabilitar listado de directorios
+Options -Indexes

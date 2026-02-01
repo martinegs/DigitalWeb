@@ -22,3 +22,8 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Archivos temporales
+temp_*.txt
+storage.zip
+deployment-info.txt
