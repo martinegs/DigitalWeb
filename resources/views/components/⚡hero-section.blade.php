@@ -45,10 +45,10 @@ new class extends Component {
 
           <!-- CTA Buttons -->
           <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
-            <button onclick="scrollToSection('contacto')" class="btn-primary-glow">
+            <a href="https://wa.me/5492616945791?text=Hola%20Digitaltex%20Mendoza%2C%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="btn-primary-glow" style="text-decoration: none;">
               <span class="btn-shine"></span>
               <span class="btn-content">Solicitar Presupuesto</span>
-            </button>
+            </a>
             <button onclick="scrollToSection('dtf')" class="btn-secondary-glass">
               <span class="btn-content">Ver Precios DTF</span>
             </button>

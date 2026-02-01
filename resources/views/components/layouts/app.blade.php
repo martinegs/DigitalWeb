@@ -99,7 +99,7 @@
     </style>
 
     <!-- Preload recursos críticos -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="preload" href="{{ asset('storage/img/logo.webp') }}" as="image" type="image/webp" fetchpriority="high">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://fonts.bunny.net">
